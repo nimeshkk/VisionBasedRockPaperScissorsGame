@@ -1,6 +1,3 @@
-Here's your complete README.md file formatted for GitHub:
-
-```markdown
 # 🎮 Rock Paper Scissors Lizard Spock 🚀
 
 Welcome to an epic webcam-based game where your hand gestures bring the classic Rock Paper Scissors to life with Lizard and Spock! Powered by MediaPipe and OpenCV, this game delivers real-time gesture detection, vibrant emojis, and a sleek UI. Ready to outsmart the computer? Let's dive in! ✊🖐️✌️🦎🖖
@@ -14,7 +11,7 @@ Welcome to an epic webcam-based game where your hand gestures bring the classic 
 - **Modular Code**: Clean, organized structure for easy tweaks and extensions.
 
 ## 📂 Project Structure
-
+```
 VisionBasedRockPaperScissorsGame/
 ├── assets/
 │   └── seguiemj.ttf          # Emoji font (e.g., Segoe UI Emoji)
@@ -25,7 +22,7 @@ VisionBasedRockPaperScissorsGame/
 │   └── main.py             # The heart of the game
 ├── README.md                # You're reading it!
 └── requirements.txt         # Python dependencies
-
+```
 ## 🛠️ Get Started
 
 ### Prerequisites
@@ -45,8 +42,9 @@ VisionBasedRockPaperScissorsGame/
    cd VisionBasedRockPaperScissorsGame
    pip install -r requirements.txt
    ```
-   The requirements.txt includes:
+   pip install -r requirements.txt
    ```
+   The requirements.txt includes:
    opencv-python==4.10.0.84
    mediapipe==0.10.14
    numpy==1.26.4
@@ -131,4 +129,4 @@ Follow PEP 8 and add comments for clarity.
 MIT License – feel free to use, modify, and share!
 
 Ready to crush it? Show your best gesture and let the games begin! 🚀
-```
+
