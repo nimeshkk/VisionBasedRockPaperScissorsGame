@@ -120,6 +120,7 @@ Join the fun! Fork the repo, tweak the code, and submit a pull request. Ideas we
 A huge shoutout to our awesome contributors who made this game epic! 🎉
 - JIS Dulanjana -  Gesture Detection, Game Logic.
 - JLN Kavinda - Game Logic, Testing
+- DD Leewanage - User Interface
 - [Contributor Name] - Documentation, Emoji Integration
 
 Follow PEP 8 and add comments for clarity.
