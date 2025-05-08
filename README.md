@@ -122,7 +122,7 @@ A huge shoutout to our awesome contributors who made this game epic! 🎉
 - JLN Kavinda - Game Logic, Testing, version control
 - DD Leewanage - User Interface, Error handling
 - KGSSU Weerasinghe - Documentation, Testing
-- AHSBKD Silva - Documentation, Error handling
+- AHSKD Silva - Documentation, Error handling
 
 Follow PEP 8 and add comments for clarity.
 
