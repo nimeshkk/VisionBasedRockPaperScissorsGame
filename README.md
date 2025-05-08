@@ -126,7 +126,7 @@ A huge shoutout to our awesome contributors who made this game epic! 🎉
 
 Follow PEP 8 and add comments for clarity.
 
-## 📜 License
+### 📜 License
 
 MIT License – feel free to use, modify, and share!
 
