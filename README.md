@@ -119,10 +119,10 @@ Join the fun! Fork the repo, tweak the code, and submit a pull request. Ideas we
 
 A huge shoutout to our awesome contributors who made this game epic! 🎉
 - JIS Dulanjana -  Gesture Detection, Game Logic.
-- JLN Kavinda - Game Logic, Testing
-- DD Leewanage - User Interface
-- KGSSU Weerasinghe - Documentation, Emoji Integration
-- AHSBKD Silva - Documentation, 
+- JLN Kavinda - Game Logic, Testing, version control
+- DD Leewanage - User Interface, Error handling
+- KGSSU Weerasinghe - Documentation, Testing
+- AHSBKD Silva - Documentation, Error handling
 
 Follow PEP 8 and add comments for clarity.
 
