@@ -1,8 +1,10 @@
 import cv2
 import time
-from gesture_detection import detect_gesture
-from game_logic import get_computer_choice, determine_winner
-from utils import add_text_overlay, countdown, EMOJIS, REACTIONS
+from src.gesture_detection import detect_gesture
+from src.game_logic import get_computer_choice, determine_winner
+from src.utils import add_text_overlay, countdown, EMOJIS, REACTIONS
+
+VALID_GESTURES = ["Rock", "Paper", "Scissors", "Lizard", "Spock"]
 
 def main():
     cap = cv2.VideoCapture(0)
@@ -22,16 +24,19 @@ def main():
             break
 
         # Resize frame for display
-        frame = cv2.resize(frame, (800, 600))
+        frame = cv2.resize(frame, (1280, 1024))
 
         # Live gesture detection
         gesture, landmarks = detect_gesture(frame)
 
         # Display gesture text
         display_text = f"Gesture: {gesture} {EMOJIS.get(gesture, '')}"
-        frame = add_text_overlay(frame, display_text, (10, 10), font_size=40, text_color=(0, 255, 0), overlay_alpha=0.5)
+        frame = add_text_overlay(
+            frame, display_text, (10, 10),
+            font_size=40, text_color=(0, 255, 0), overlay_alpha=0.5
+        )
 
-        if game_state == "detecting" and gesture not in ["No hand detected", "Unknown"]:
+        if game_state == "detecting" and gesture in VALID_GESTURES:
             current_time = time.time()
             if current_time - last_gesture_time > gesture_cooldown:
                 countdown(frame)
@@ -41,11 +46,15 @@ def main():
                     break
                 frame = cv2.resize(frame, (800, 600))
                 gesture, landmarks = detect_gesture(frame)
-                user_choice = gesture
-                computer_choice = get_computer_choice()
-                result = determine_winner(user_choice, computer_choice)
-                last_gesture_time = current_time
-                game_state = "result"
+
+                if gesture in VALID_GESTURES:
+                    user_choice = gesture
+                    computer_choice = get_computer_choice()
+                    result = determine_winner(user_choice, computer_choice)
+                    last_gesture_time = current_time
+                    game_state = "result"
+                else:
+                    print(f"Ignored invalid gesture after countdown: {gesture}")
 
         # Display result and emojis
         if game_state == "result":
