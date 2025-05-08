@@ -121,7 +121,8 @@ A huge shoutout to our awesome contributors who made this game epic! 🎉
 - JIS Dulanjana -  Gesture Detection, Game Logic.
 - JLN Kavinda - Game Logic, Testing
 - DD Leewanage - User Interface
-- [Contributor Name] - Documentation, Emoji Integration
+- KGSSU Weerasinghe - Documentation, Emoji Integration
+- AHSBKD Silva - Documentation, 
 
 Follow PEP 8 and add comments for clarity.
 
