@@ -123,6 +123,7 @@ A huge shoutout to our awesome contributors who made this game epic! 🎉
 - DD Leewanage - User Interface, Error handling
 - KGSSU Weerasinghe - Documentation, Testing
 - AHSKD Silva - Documentation, Error handling
+- WNACU Weerasingha - Testing, Error handling, Documentation
 
 Follow PEP 8 and add comments for clarity.
 
