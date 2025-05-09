@@ -1,0 +1,62 @@
+# ------------------------
+# General
+# ------------------------
+*.log
+*.DS_Store
+.env
+.env.*
+
+# ------------------------
+# Node (React Frontend)
+# ------------------------
+frontend/node_modules/
+frontend/build/
+frontend/.env
+
+# ------------------------
+# Python (Backend)
+# ------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+
+# Ignore specific virtual environment
+ps-game/
+
+# VS Code
+.vscode/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+
+# PyInstaller
+*.spec
+
+# ------------------------
+# Media
+# ------------------------
+*.jpg
+*.jpeg
+*.png
+*.mp4
+*.avi
+*.mov
+*.webm
+
+# ------------------------
+# Temporary files
+# ------------------------
+*.swp
+*.bak
+*.tmp
